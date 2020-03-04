@@ -7,6 +7,7 @@ int main(int argc, char *argv[]){
 	printf("%c\t%d\t%d\n", c, c, sizeof(c));
 	printf("%c\t%d\t%d\n", i, i, sizeof(i));
 
+
 	return 0;
 
 }
