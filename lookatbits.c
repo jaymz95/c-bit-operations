@@ -1,11 +1,19 @@
 #include <stdio.h>
 #include <inttypes.h>
 
+void printbits(uint8_t s) {
+
+	for (int i = (8 - 1); i >=0; i--)
+		printf("%d", ((1ULL << i) & s) ? 1 : 0);
+
+}
+
 int main(int argc, char *argv[]){
 	
   uint8_t a = 73;
   uint8_t b = 99;
   uint8_t c = (a ^ b);
+
 
   printf("a = "); printbits(a); printf("\n");
   printf("b = "); printbits(b); printf("\n");
